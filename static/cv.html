@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Joe Purdy</title>
+
+	<style>
+	html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+html,
+button,
+input,
+textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --text: #333333;
+    --bold-title: #673FF5;
+    --headline: #c9cccf;
+    --sub-headline: #96999b;
+    --primary: rgb(207, 214, 255);
+    --secondary: rgb(238, 245, 255);
+}
+
+body {
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    max-width: 600px;
+    color: var(--text);
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #494C79;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--headline);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+h3 {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    margin-top: 0.5rem;
+    color: var(--bold-title);
+}
+
+h4 {
+    font-size: 14px;
+    color: var(--sub-headline);
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
+}
+
+p,
+li {
+    margin-bottom: 0.25rem;
+    font-size: 14px;
+}
+
+a {
+    transition: box-shadow 160ms ease 0s;
+    box-shadow: var(--secondary) 0px -9px 0px inset;
+    border-bottom: 2px solid var(--primary);
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    box-shadow: var(--primary) 0px -1.2em 0px inset;
+}
+
+section ul {
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+    list-style: disc;
+}
+
+.contact {
+    padding-top: 2rem;
+}
+
+.contact span {
+    width: 100px;
+    display: inline-block;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(50% - 0.5rem);
+}
+
+.skill-category ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    margin-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--secondary);
+    white-space: nowrap;
+}
+
+.position {
+    margin-bottom: 1.5rem;
+}
+
+.grey {
+    color: var(--sub-headline);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pdf {
+    color: var(--headline);
+    transition: color ease 160ms;
+    border: none;
+    box-shadow: none;
+}
+
+.pdf:hover {
+    box-shadow: none;
+    color: var(--sub-headline);
+}
+
+@media print {
+    body {
+        padding: 0rem;
+    }
+
+    section,
+    div {
+        page-break-inside: avoid;
+    }
+
+    .pdf {
+        display: none;
+    }
+}
+	</style>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+		  <div class="header">
+		    <h1>Joe Purdy</h1>
+		  </div>
+		  
+		  <h3>Engineering Leader</h3>
+		
+		
+		    <p class="grey">A seasoned engineering leader with over a decade of experience, I specialize in software development, SRE practices, and team management, with a keen focus on scaling cloud services and fostering technical innovation. I&#x27;m passionate about leading cross-functional teams towards achieving strategic goals and technological advancements. Seeking opportunities to drive engineering teams towards new heights of technical excellence and innovation in an environment that values sustainability and inclusivity. Connect with me for roles where my expertise in guiding high-performing teams and my enthusiasm for continuous learning can be a significant asset.</p>
+		
+				<section class="position">
+						<h2>Work Experience</h2>
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://www.sunwolf.studio/">Sunwolf Studio</a>
+							</h3>
+		
+		
+					<h4>
+					    Fractional CTO
+					
+					      | Dec 2023
+					  
+					      - Present
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://atolio.com/">Atolio</a>
+							</h3>
+		
+		
+					<h4>
+					    Infrastructure Engineer
+					
+					      | Jul 2024
+					  
+					      - Present
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://arcadia.com/">Arcadia</a>
+							</h3>
+		
+		
+					<h4>
+					    Staff Site Reliability Engineer
+					
+					      | Aug 2022
+					  
+					    - Dec 2023
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://customer.io/">Customer.io</a>
+							</h3>
+		
+		
+					<h4>
+					    Senior Software Engineer, Developer Experience
+					
+					      | Sep 2021
+					  
+					    - Jul 2022
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+		
+					<h4>
+					    Senior Site Reliability Engineer
+					
+					      | Nov 2020
+					  
+					    - Sep 2021
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://wgu.edu/">Western Governors University</a>
+							</h3>
+		
+		
+					<h4>
+					    Senior Site Reliability Engineer
+					
+					      | Jul 2020
+					  
+					    - Nov 2020
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://customer.io/">Customer.io</a>
+							</h3>
+		
+		
+					<h4>
+					    Site Reliability Engineer
+					
+					      | Oct 2017
+					  
+					    - Jul 2020
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+		
+					<h4>
+					    Test Engineer
+					
+					      | Apr 2017
+					  
+					    - Oct 2017
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+		
+					<h4>
+					    Technical Support Engineer
+					
+					      | Oct 2016
+					  
+					    - Apr 2017
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="https://www.dealerspike.com/">Dealerspike</a>
+							</h3>
+		
+		
+					<h4>
+					    Engineering Manager, QA
+					
+					      | May 2016
+					  
+					    - Oct 2016
+					</h4>
+					
+					
+				</section>
+				<section class="position">
+					
+							<h3>
+									<a target="_blank" rel="noopener" href="http://www.xpressbet.com/">Xpressbet</a>
+							</h3>
+		
+		
+					<h4>
+					    Engineering Manager, QA
+					
+					      | Nov 2014
+					  
+					    - May 2016
+					</h4>
+					
+					
+				</section>
+			<h2>Contact Information</h2>
+			<section class="contact">
+				<p>
+					<span>Website:</span>
+					<a href="https://purdy.dev/" target="_blank" rel="noopener">https://purdy.dev/</a>
+				</p>
+		
+					<p>
+						<span>Email:</span>
+						<a href="mailto:joe@purdy.dev" target="_blank" rel="noopener noreferrer">joe@purdy.dev</a>
+					</p>
+		
+					<p>
+						<span>Phone:</span> +1-503-479-8633
+					</p>
+		
+			</section>
+	</body>
+</html>

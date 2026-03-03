@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/purdy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joepurdy.io
+  * I am purdy (https://keybase.io/purdy) on keybase.
+  * I have a public key ASAheTe_l6VbGh2BB_tsqc2z6VwbBEJAAjPdsIQoVkDeSQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010bcf6d7ae96007d621e01896ba95e3f854e233f82f821721269155a785cab0040a",
+      "host": "keybase.io",
+      "kid": "0120217937bf97a55b1a1d8107fb6ca9cdb3e95c1b0442400233ddb084285640de490a",
+      "uid": "cc54c3f4370d6e49699a2eabf5ec2519",
+      "username": "purdy"
+    },
+    "merkle_root": {
+      "ctime": 1508710995,
+      "hash": "d0ffe0d09f54a83c3c48a2883a0527b888d435894130584ef0bce0bc8b5f254746c068117eb4a0170b655f81fb7eeeceb5ec016c83668a851e87c9c28de6e9ec",
+      "hash_meta": "bbf82b6929d52939ee5e800198c3f5e952950b85effad6e4a8201def8703fe92",
+      "seqno": 1616227
+    },
+    "service": {
+      "hostname": "joepurdy.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1508711019,
+  "expire_in": 504576000,
+  "prev": "b08d6c997a5fcad34a3868ad39098834f0b2eac983ed73b0335a33f1988dba75",
+  "seqno": 50,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgIXk3v5elWxodgQf7bKnNs+lcGwRCQAIz3bCEKFZA3kkKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMGJjZjZkN2FlOTYwMDdkNjIxZTAxODk2YmE5NWUzZjg1NGUyMzNmODJmODIxNzIxMjY5MTU1YTc4NWNhYjAwNDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjE3OTM3YmY5N2E1NWIxYTFkODEwN2ZiNmNhOWNkYjNlOTVjMWIwNDQyNDAwMjMzZGRiMDg0Mjg1NjQwZGU0OTBhIiwidWlkIjoiY2M1NGMzZjQzNzBkNmU0OTY5OWEyZWFiZjVlYzI1MTkiLCJ1c2VybmFtZSI6InB1cmR5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA4NzEwOTk1LCJoYXNoIjoiZDBmZmUwZDA5ZjU0YTgzYzNjNDhhMjg4M2EwNTI3Yjg4OGQ0MzU4OTQxMzA1ODRlZjBiY2UwYmM4YjVmMjU0NzQ2YzA2ODExN2ViNGEwMTcwYjY1NWY4MWZiN2VlZWNlYjVlYzAxNmM4MzY2OGE4NTFlODdjOWMyOGRlNmU5ZWMiLCJoYXNoX21ldGEiOiJiYmY4MmI2OTI5ZDUyOTM5ZWU1ZTgwMDE5OGMzZjVlOTUyOTUwYjg1ZWZmYWQ2ZTRhODIwMWRlZjg3MDNmZTkyIiwic2Vxbm8iOjE2MTYyMjd9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiam9lcHVyZHkuaW8iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwODcxMTAxOSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiJiMDhkNmM5OTdhNWZjYWQzNGEzODY4YWQzOTA5ODgzNGYwYjJlYWM5ODNlZDczYjAzMzVhMzNmMTk4OGRiYTc1Iiwic2Vxbm8iOjUwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQC2uH3eeyYv6yi3omzoZeRhar11+Q66qFYAYwYqNQ6PSu0VyMgaZWv6v+a+WII44gSvobDMIOapk2xFXMxnecwWoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCBANiQTN5vn5PwzTclhGp+iJbl63DTgMDm/ZcN6anTjw6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/purdy
+
+==================================================================
