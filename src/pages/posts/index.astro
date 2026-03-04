@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostListItem from "../../components/PostListItem.astro";
+
+const posts = await getCollection("posts", ({ data }) => !data.draft);
+const sorted = posts.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+---
+
+<BaseLayout title="All Posts">
+  <h1 class="text-2xl font-bold mb-6">All Posts</h1>
+  <div class="space-y-0 divide-y divide-border">
+    {sorted.map((post) => (
+      <PostListItem
+        title={post.data.title}
+        date={post.data.date}
+        description={post.data.description}
+        url={`/posts/${post.data.slug}/`}
+      />
+    ))}
+  </div>
+</BaseLayout>

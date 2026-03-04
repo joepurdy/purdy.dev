@@ -1,0 +1,49 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostListItem from "../../components/PostListItem.astro";
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const tagMap = new Map<string, { name: string; posts: typeof posts }>();
+
+  for (const post of posts) {
+    for (const tag of post.data.tags) {
+      const slug = tag.toLowerCase().replace(/\s+/g, "-");
+      if (!tagMap.has(slug)) {
+        tagMap.set(slug, { name: tag, posts: [] });
+      }
+      tagMap.get(slug)!.posts.push(post);
+    }
+  }
+
+  return [...tagMap.entries()].map(([slug, { name, posts }]) => ({
+    params: { tag: slug },
+    props: {
+      tagName: name,
+      posts: posts.sort(
+        (a, b) => b.data.date.getTime() - a.data.date.getTime()
+      ),
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { tagName, posts } = Astro.props;
+---
+
+<BaseLayout title={`Posts tagged "${tagName}"`}>
+  <h1 class="text-2xl font-bold mb-6">
+    Posts tagged &ldquo;{tagName}&rdquo;
+  </h1>
+  <div class="space-y-0 divide-y divide-border">
+    {posts.map((post) => (
+      <PostListItem
+        title={post.data.title}
+        date={post.data.date}
+        description={post.data.description}
+        url={`/posts/${post.data.slug}/`}
+      />
+    ))}
+  </div>
+</BaseLayout>

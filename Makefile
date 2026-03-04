@@ -1,51 +1,27 @@
 default: run
 
-# Set default warning mode if not specified
-# permitted values debug|info|warn|error
-# e.g. usage from make cli:
-#  		make build log=debug
-#  		make build-site log=debug
-log ?= warn
-
 help:		## list out commands with descriptions
 	@sed -ne '/@sed/!s/## //p' $(MAKEFILE_LIST)
 
-build:		## hugo build & compile css (one-time)
-	@make site css
+run:		## start Astro dev server
+	@npx astro dev --port 1313
 
-run: ##            run Hugo server & watch Tailwind CSS compiler
-	@make -j2 run-site run-css
-	# --jobs=2 parallelizes the commands
+build:		## production build
+	@npx astro build
 
-site:		## hugo compile build
-	@hugo \
-		build \
-		--cleanDestinationDir --gc --minify --printI18nWarnings --buildDrafts \
-		--logLevel $(log)
+preview:	## preview production build
+	@npx astro preview --port 1313
 
-css:		## compile Tailwind CSS
-	@npx @tailwindcss/cli \
-		-i ./assets/css/input.css  \
-		-o ./assets/css/main.css
+clean:		## remove generated files
+	rm -rf dist .astro
 
-run-css:	## run & watch Tailwind CSS compiler
-	@npx @tailwindcss/cli \
-		-i ./assets/css/input.css  \
-		-o ./assets/css/main.css --watch
-
-run-site:	## run Hugo server
-	@hugo \
-		server \
-		--port=1313 --disableFastRender \
-		--cleanDestinationDir --gc --minify --printI18nWarnings --buildDrafts \
-		--logLevel $(log)
-
-clean:		## remove all the generated files
-	rm -rf public
-	rm  -f assets/css/main.css
-
-post:		## create a new post ## make post slug=test-post
-	@hugo new content -k post content/blog/$$(date +%Y-%m-%d)-$(slug).md
-
-short:		## create a new short ## make short slug=test-short
-	@hugo new content -k short content/blog/$$(date +%Y-%m-%d)-$(slug).md
+post:		## create a new post (make post slug=my-slug)
+	@echo '---' > src/content/posts/$(slug).md
+	@echo 'title: ""' >> src/content/posts/$(slug).md
+	@echo "date: $$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> src/content/posts/$(slug).md
+	@echo 'author: "Joe Purdy"' >> src/content/posts/$(slug).md
+	@echo 'description: ""' >> src/content/posts/$(slug).md
+	@echo 'slug: ""' >> src/content/posts/$(slug).md
+	@echo 'tags: []' >> src/content/posts/$(slug).md
+	@echo '---' >> src/content/posts/$(slug).md
+	@echo "Created src/content/posts/$(slug).md"

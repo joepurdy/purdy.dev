@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const posts = await getCollection("posts", ({ data }) => !data.draft);
+
+const tagCounts = new Map<string, number>();
+for (const post of posts) {
+  for (const tag of post.data.tags) {
+    const slug = tag.toLowerCase().replace(/\s+/g, "-");
+    tagCounts.set(slug, (tagCounts.get(slug) || 0) + 1);
+  }
+}
+
+const tagMap = new Map<string, string>();
+for (const post of posts) {
+  for (const tag of post.data.tags) {
+    const slug = tag.toLowerCase().replace(/\s+/g, "-");
+    if (!tagMap.has(slug)) {
+      tagMap.set(slug, tag);
+    }
+  }
+}
+
+const sortedTags = [...tagCounts.entries()].sort((a, b) =>
+  a[0].localeCompare(b[0])
+);
+---
+
+<BaseLayout title="Tags">
+  <h1 class="text-2xl font-bold mb-6">Tags</h1>
+  <div class="flex flex-wrap gap-3">
+    {sortedTags.map(([slug, count]) => (
+      <a
+        href={`/tags/${slug}/`}
+        class="text-link hover:text-link-hover no-underline bg-border/50 px-3 py-1 rounded"
+      >
+        {tagMap.get(slug)} <span class="text-text-muted">({count})</span>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

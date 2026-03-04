@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  description?: string;
+  url: string;
+}
+
+const { title, date, description, url } = Astro.props;
+
+const formattedDate = date.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+---
+
+<article class="py-4">
+  <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+    <time datetime={date.toISOString()} class="text-text-muted text-sm shrink-0">
+      {formattedDate}
+    </time>
+    <a href={url} class="text-link hover:text-link-hover no-underline font-medium">
+      {title}
+    </a>
+  </div>
+  {description && (
+    <p class="text-text-muted text-sm mt-1 sm:ml-[calc(theme(spacing.4)+theme(spacing.16))]">
+      {description}
+    </p>
+  )}
+</article>

@@ -1,0 +1,22 @@
+---
+interface Props {
+  tags: string[];
+}
+
+const { tags } = Astro.props;
+
+function slugify(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, "-");
+}
+---
+
+<div class="flex flex-wrap gap-2">
+  {tags.map((tag) => (
+    <a
+      href={`/tags/${slugify(tag)}/`}
+      class="text-sm text-text-muted hover:text-link no-underline bg-border/50 px-2 py-0.5 rounded"
+    >
+      {tag}
+    </a>
+  ))}
+</div>

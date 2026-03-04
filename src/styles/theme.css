@@ -1,0 +1,21 @@
+@theme {
+  --color-bg: #fafafa;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-link: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-border: #e5e7eb;
+  --color-accent: #2563eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-bg: #111111;
+    --color-text: #e5e5e5;
+    --color-text-muted: #9ca3af;
+    --color-link: #60a5fa;
+    --color-link-hover: #93bbfd;
+    --color-border: #2e2e2e;
+    --color-accent: #60a5fa;
+  }
+}
