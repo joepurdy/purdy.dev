@@ -3,14 +3,17 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostListItem from "../../components/PostListItem.astro";
 
-const posts = await getCollection("posts", ({ data }) => !data.draft && !data.archived);
+const posts = await getCollection("posts", ({ data }) => !data.draft && data.archived);
 const sorted = posts.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 ---
 
-<BaseLayout title="All Posts">
-  <h1 class="text-2xl font-bold mb-6">All Posts</h1>
+<BaseLayout title="Archive" noindex>
+  <h1 class="text-2xl font-bold mb-2">Archive</h1>
+  <p class="text-text-muted text-sm mb-6">
+    These posts contain outdated or irrelevant information and are kept for historical reference only.
+  </p>
   <div class="space-y-0 divide-y divide-border">
     {sorted.map((post) => (
       <PostListItem

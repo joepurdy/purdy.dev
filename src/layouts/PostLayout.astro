@@ -8,9 +8,10 @@ interface Props {
   author: string;
   description?: string;
   tags?: string[];
+  archived?: boolean;
 }
 
-const { title, date, author, description, tags } = Astro.props;
+const { title, date, author, description, tags, archived } = Astro.props;
 
 const formattedDate = date.toLocaleDateString("en-US", {
   year: "numeric",
@@ -19,7 +20,7 @@ const formattedDate = date.toLocaleDateString("en-US", {
 });
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} noindex={archived}>
   <article>
     <header class="mb-8">
       <h1 class="text-3xl font-bold mb-2">{title}</h1>
@@ -29,6 +30,12 @@ const formattedDate = date.toLocaleDateString("en-US", {
         <span>{author}</span>
       </div>
     </header>
+    {archived && (
+      <aside class="mb-8 p-4 border border-border rounded bg-border/20 text-sm text-text-muted">
+        <p class="font-semibold text-text mb-1">Archived Post</p>
+        <p>This post contains outdated information and is kept for historical reference only. It has been removed from the main blog feed. <a href="/archive/" class="text-link hover:text-link-hover">Browse all archived posts &rarr;</a></p>
+      </aside>
+    )}
     <div class="prose dark:prose-invert max-w-none">
       <slot />
     </div>

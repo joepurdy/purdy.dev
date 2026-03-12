@@ -9,6 +9,7 @@ tags:
   - "internet explorer"
   - "microsoft edge"
   - "vagrant"
+archived: true
 ---
 
 > **UPDATE:** I've made the decision to retire the ModernIE VMs, check out the [official announcement](https://joecod.es/retiring-modernie-vagrant-boxes/) for details.

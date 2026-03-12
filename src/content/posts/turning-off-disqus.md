@@ -7,6 +7,7 @@ slug: "2017/09/turning-off-disqus/turning-off-disqus"
 tags:
   - "disqus"
   - "meta"
+archived: true
 ---
 
 I made the decision to disable comments on my blog posts today because the convenience of using Disqus as a drop-in commenting system is far outweighed by their business practices surrounding free users.

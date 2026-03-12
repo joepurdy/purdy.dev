@@ -6,7 +6,11 @@ export default defineConfig({
   site: "https://purdy.dev",
   output: "static",
   trailingSlash: "always",
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes("/archive/"),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

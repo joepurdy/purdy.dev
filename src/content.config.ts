@@ -11,6 +11,7 @@ const posts = defineCollection({
     tags: z.array(z.string()).default([]),
     slug: z.string(),
     draft: z.boolean().default(false),
+    archived: z.boolean().default(false),
     cover: z
       .object({
         url: z.string(),

@@ -10,6 +10,7 @@ tags:
   - "Nightwatch.js"
   - "JavaScript"
   - "testing"
+archived: true
 ---
 
 Here we go, yet another blog post discussing the page object pattern. I'm sure I've read at least a dozen similar articles by now in my adventures in automated testing and yet here I am writing another one. I must be mad, right? Well not exactly. Want to know something that is mad? The fact that people are still writing Selenium tests with inline element selectors and API calls. Every time I encounter a test suite riddled with flakey tests stemming from overusing direct calls to the Webdriver API and elements being selected on the fly I'm instantly reminded of a great quote by Mr. Stewart himself:

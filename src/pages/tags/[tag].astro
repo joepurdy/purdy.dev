@@ -5,7 +5,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostListItem from "../../components/PostListItem.astro";
 
 export const getStaticPaths = (async () => {
-  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const posts = await getCollection("posts", ({ data }) => !data.draft && !data.archived);
   const tagMap = new Map<string, { name: string; posts: typeof posts }>();
 
   for (const post of posts) {

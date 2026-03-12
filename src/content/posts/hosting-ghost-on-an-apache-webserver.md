@@ -8,6 +8,7 @@ tags:
   - "ghost"
   - "apache"
   - "node.js"
+archived: true
 ---
 
 I just launched my new blog here using the [Ghost blogging platform](https://ghost.org/) and wanted to share a quick walkthrough to help everyone avoid some of the headaches I ran into along the way.

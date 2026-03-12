@@ -10,6 +10,7 @@ tags:
   - "windows"
   - "unix"
   - "bash"
+archived: true
 ---
 
 I'm most comfortable working with a UNIX style shell, currently I'm using [oh-my-zsh](http://ohmyz.sh/) at home and bash at work. One thing that I used to find increasingly frustrating about working on a Windows PC at work is the lack of a terminal application that lets me get work done the way I'm used to.

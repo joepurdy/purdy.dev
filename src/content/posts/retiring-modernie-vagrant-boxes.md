@@ -10,6 +10,7 @@ tags:
   - "internet explorer"
   - "microsoft edge"
   - "vagrant"
+archived: true
 ---
 
 Hello all,

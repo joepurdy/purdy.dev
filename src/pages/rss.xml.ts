@@ -3,7 +3,7 @@ import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 
 export async function GET(context: APIContext) {
-  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const posts = await getCollection("posts", ({ data }) => !data.draft && !data.archived);
   const sorted = posts.sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime()
   );
