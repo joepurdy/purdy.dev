@@ -9,7 +9,7 @@ tags:
   - "meta"
 ---
 
-This was originally an internal document about my personal approach and opinions about pairing (including, but not limited to pair programming). I've decided to publish it in case it sparks ideas for more people. It’s not a set of rules or policy you must follow. It’s just what works for me and based on feedback I’ve received it also works for others. If you want to skip the theory stuff jump ahead to the “[let’s talk practice](https://purdy.dev/words/pairing-101-how-i-become-better-at-everything/#enough-theory-lets-talk-practice)” section.
+This was originally an internal document about my personal approach and opinions about pairing (including, but not limited to pair programming). I've decided to publish it in case it sparks ideas for more people. It’s not a set of rules or policy you must follow. It’s just what works for me and based on feedback I’ve received it also works for others. If you want to skip the theory stuff jump ahead to the “[let’s talk practice](#enough-theory-lets-talk-practice)” section.
 
 # What is pair programming?
 
@@ -43,7 +43,7 @@ Have an “Ideas” document!
 
 I’ll share a very basic template you can copy for yourself here:
 
-[Person 1 <> Person 2 🍐 Ideas](https://purdy.dev/pairing-ideas-doc-template/)
+[Person 1 <> Person 2 🍐 Ideas](/pairing-ideas-doc-template/)
 
 The general idea is you create a shared page titled after your name and the person you’re pairing with and share it between the two of you. From there you just collect a list of topics of interest.
 

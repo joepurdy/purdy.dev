@@ -18,7 +18,7 @@ So I appreciated the gesture from the company's leadership team in prioritizing 
 
 But this blog post isn't about home improvement, instead I wanted to talk about the other thing I did with some of my time away from "work" which was to play around with the recently released [Caddy 2 server](https://caddyserver.com/v2?ref=purdy.dev) and how I'm using it for local Go development with HTTP support.
 
-If you want to skip the verbose step-by-step explanations just skip ahead to the [tl;dr](https://purdy.dev/words/basic-go-development-environment-with-https-and-dynamic-reloading/#tldr).
+If you want to skip the verbose step-by-step explanations just skip ahead to the [tl;dr](#tldr).
 
 # A basic Go server
 

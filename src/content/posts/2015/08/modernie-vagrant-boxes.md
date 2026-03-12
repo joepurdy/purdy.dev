@@ -12,11 +12,11 @@ tags:
 archived: true
 ---
 
-> **UPDATE:** I've made the decision to retire the ModernIE VMs, check out the [official announcement](https://joecod.es/retiring-modernie-vagrant-boxes/) for details.
+> **UPDATE:** I've made the decision to retire the ModernIE VMs, check out the [official announcement](/posts/2016/06/retiring-modernie-vagrant-boxes/) for details.
 
 I've been working on a few different automation projects that require a Windows test agent and naturally I've grown increasingly frustrated with the Windows OS at large. 
 
-To their credit, Microsoft has a [great developer resource site](dev.modern.ie/) for their OS and web browsers. They also provide a set of virtual machine images for testing the many iterations of Internet Explorer.
+To their credit, Microsoft has a [great developer resource site](https://dev.modern.ie/) for their OS and web browsers. They also provide a set of virtual machine images for testing the many iterations of Internet Explorer.
 
 This is actually really useful seeing as the process of upgrading and downgrading Internet Explorer releases is fraught with perils. I wanted to take it one step further however and package their virtualbox images into [Vagrant](https://www.vagrantup.com/) boxes for more rapid deployment. 
 

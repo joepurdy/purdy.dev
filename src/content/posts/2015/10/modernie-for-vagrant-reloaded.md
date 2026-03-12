@@ -12,9 +12,9 @@ tags:
 archived: true
 ---
 
-> **UPDATE:** I've made the decision to retire the ModernIE VMs, check out the [official announcement](https://joecod.es/retiring-modernie-vagrant-boxes/) for details.
+> **UPDATE:** I've made the decision to retire the ModernIE VMs, check out the [official announcement](/posts/2016/06/retiring-modernie-vagrant-boxes/) for details.
 
-I published patched vagrant boxes last month for Microsoft's [ModernIE Virtual Machines](http://dev.modern.ie/tools/vms/) on Hashicorp's ~~Vagrant Cloud~~ [Atlas](https://atlas.hashicorp.com/modernIE/) and talked about the process in a [previous blog post](http://joecod.es/modernie-vagrant-boxes/). After letting them loose in the wild and discussing them over on [reddit](https://www.reddit.com/r/vagrant/comments/3hwqrh/windows_modernie_vagrant_boxes_on_vagrant_cloud/) I've learned a few things and wanted to do a follow-up to cover some of the unexpected peculiarities encountered so far by myself as well as the vagrant community.
+I published patched vagrant boxes last month for Microsoft's [ModernIE Virtual Machines](http://dev.modern.ie/tools/vms/) on Hashicorp's ~~Vagrant Cloud~~ [Atlas](https://atlas.hashicorp.com/modernIE/) and talked about the process in a [previous blog post](/posts/2015/08/modernie-vagrant-boxes/). After letting them loose in the wild and discussing them over on [reddit](https://www.reddit.com/r/vagrant/comments/3hwqrh/windows_modernie_vagrant_boxes_on_vagrant_cloud/) I've learned a few things and wanted to do a follow-up to cover some of the unexpected peculiarities encountered so far by myself as well as the vagrant community.
 
 #### Rearming is as simple as `vagrant reload`, right? 
 ### WRONG
