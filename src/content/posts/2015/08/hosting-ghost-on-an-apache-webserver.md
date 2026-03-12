@@ -3,7 +3,7 @@ title: "Hosting Ghost on an Apache Webserver"
 date: 2015-08-15T13:47:00-07:00
 author: "Joe Purdy"
 description: "Making a node.js application like Ghost cohabit with Apache doesn't have to be difficult, let's make it easy!"
-slug: "2015/08/ghost-on-apache/hosting-ghost-on-an-apache-webserver"
+slug: "2015/08/hosting-ghost-on-an-apache-webserver"
 tags:
   - "ghost"
   - "apache"

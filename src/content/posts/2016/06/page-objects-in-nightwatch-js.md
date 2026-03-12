@@ -3,7 +3,7 @@ title: "Page Objects in Nightwatch.js"
 date: 2016-06-07T16:14:00-07:00
 author: "Joe Purdy"
 description: "Page objects are critical to maintaining automation suites and protecting against flakey tests. Learn how to enjoy building them with Nightwatch.js."
-slug: "2016/06/page-objects-in-nightwatch-js/page-objects-in-nightwatch-js"
+slug: "2016/06/page-objects-in-nightwatch-js"
 tags:
   - "selenium"
   - "page objects"

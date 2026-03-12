@@ -3,7 +3,7 @@ title: "Pairing 101 - How I become better at everything"
 date: 2020-07-21T16:00:00Z
 author: "Joe Purdy"
 description: "Traditionally, pair programming is simply the act of two (or more) people working off a single editor to write code. Normally one person “drives” by being the person to actually type code and run commands while the other person helps navigate."
-slug: "2020/07/pairing-101-how-i-become-better-at-everything/pairing-101-how-i-become-better-at-everything"
+slug: "2020/07/pairing-101-how-i-become-better-at-everything"
 tags:
   - "remote-work"
   - "meta"

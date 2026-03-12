@@ -3,7 +3,7 @@ title: "ModernIE Vagrant Boxes"
 date: 2015-08-21T15:09:00-07:00
 author: "Joe Purdy"
 description: "Get the lowdown on quick and simple configuration of ModernIE Windows virtual machines using Vagrant"
-slug: "2015/08/modernie-vagrant-boxes/modernie-vagrant-boxes"
+slug: "2015/08/modernie-vagrant-boxes"
 tags:
   - "windows"
   - "internet explorer"

@@ -3,7 +3,7 @@ title: "ModernIE for Vagrant Reloaded"
 date: 2015-10-20T11:15:00-07:00
 author: "Joe Purdy"
 description: "Modern.IE vagrant boxes configured the right way"
-slug: "2015/10/modernie-for-vagrant-reloaded/modernie-for-vagrant-reloaded"
+slug: "2015/10/modernie-for-vagrant-reloaded"
 tags:
   - "windows"
   - "internet explorer"

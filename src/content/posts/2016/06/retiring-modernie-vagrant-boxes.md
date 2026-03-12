@@ -3,7 +3,7 @@ title: "Retiring ModernIE Vagrant boxes"
 date: 2016-06-24T10:42:00-07:00
 author: "Joe Purdy"
 description: "Effective July 1st, 2016 the boxes I have hosted will be revoked so that they can no longer be downloaded."
-slug: "2016/06/retiring-modernie-vagrant-boxes/retiring-modernie-vagrant-boxes"
+slug: "2016/06/retiring-modernie-vagrant-boxes"
 tags:
   - "windows"
   - "virtualization"

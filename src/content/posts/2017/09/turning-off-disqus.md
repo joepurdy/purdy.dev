@@ -3,7 +3,7 @@ title: "Turning off Disqus"
 date: 2017-09-06T17:47:18-07:00
 author: "Joe Purdy"
 description: "It's time to pull the plug on Disqus."
-slug: "2017/09/turning-off-disqus/turning-off-disqus"
+slug: "2017/09/turning-off-disqus"
 tags:
   - "disqus"
   - "meta"

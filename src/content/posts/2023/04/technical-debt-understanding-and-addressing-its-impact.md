@@ -3,7 +3,7 @@ title: "Technical Debt: Understanding and Addressing Its Impact"
 date: 2023-04-27T08:00:00Z
 author: "Joe Purdy"
 description: ""
-slug: "2023/04/technical-debt-understanding-and-addressing-its-impact/technical-debt-understanding-and-addressing-its-impact"
+slug: "2023/04/technical-debt-understanding-and-addressing-its-impact"
 tags:
   - "engineering leadership"
   - "technical debt"

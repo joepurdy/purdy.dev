@@ -3,7 +3,7 @@ title: "My Go development environment with HTTPS and Dynamic Reloading"
 date: 2020-05-11T00:00:00Z
 author: "Joe Purdy"
 description: "A quick how-to on how I'm using Caddy 2 for local Go development with HTTPS and dynamic reloading."
-slug: "2020/05/go-dev/basic-go-development-environment-with-https-and-dynamic-reloading"
+slug: "2020/05/basic-go-development-environment-with-https-and-dynamic-reloading"
 tags:
   - "webdev"
   - "docker"

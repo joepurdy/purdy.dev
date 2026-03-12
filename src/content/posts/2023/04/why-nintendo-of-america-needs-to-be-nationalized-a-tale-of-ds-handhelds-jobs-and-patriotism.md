@@ -3,7 +3,7 @@ title: "Why Nintendo of America Needs to be Nationalized: A Tale of DS Handhelds
 date: 2023-04-01T15:00:00Z
 author: "Joe Purdy"
 description: ""
-slug: "2023/04/why-nintendo-of-america-needs-to-be-nationalized-a-tale-of-ds-handhelds-jobs-and-patriotism/why-nintendo-of-america-needs-to-be-nationalized-a-tale-of-ds-handhelds-jobs-and-patriotism"
+slug: "2023/04/why-nintendo-of-america-needs-to-be-nationalized-a-tale-of-ds-handhelds-jobs-and-patriotism"
 tags:
   - "satire"
   - "us politics"

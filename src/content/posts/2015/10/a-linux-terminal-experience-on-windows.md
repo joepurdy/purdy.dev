@@ -3,7 +3,7 @@ title: "A UNIX shell experience on Windows"
 date: 2015-10-16T13:20:00-07:00
 author: "Joe Purdy"
 description: ""
-slug: "2015/10/unix-on-windows/a-linux-terminal-experience-on-windows"
+slug: "2015/10/a-linux-terminal-experience-on-windows"
 tags:
   - "terminal"
   - "linux"

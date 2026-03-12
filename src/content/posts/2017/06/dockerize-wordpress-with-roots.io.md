@@ -3,7 +3,7 @@ title: "Dockerize WordPress with Roots.io"
 date: 2017-06-25T13:51:43-07:00
 author: "Joe Purdy"
 description: "Learn about a turbo-charged WordPress development workflow that uses Docker and the Roots.io 12 factor WordPress application model."
-slug: "2017/06/dockerize-wordpress-roots-io/dockerize-wordpress-with-roots.io"
+slug: "2017/06/dockerize-wordpress-with-roots.io"
 tags:
   - "docker"
   - "wordpress"

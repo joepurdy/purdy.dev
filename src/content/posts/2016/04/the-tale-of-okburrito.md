@@ -3,7 +3,7 @@ title: "The Tale of OkBurrito"
 date: 2016-04-16T18:39:00-07:00
 author: "Joe Purdy"
 description: "The year was 2014 and I was hungry for something. Love? Delicious Mexican food? ¿Porque no los dos?"
-slug: "2016/04/the-tale-of-okburrito/the-tale-of-okburrito"
+slug: "2016/04/the-tale-of-okburrito"
 tags:
   - "okburrito"
   - "startups"

@@ -3,7 +3,7 @@ title: "The Art of Engineering Management: Striking the Right Balance"
 date: 2023-03-29T07:00:00Z
 author: "Joe Purdy"
 description: ""
-slug: "2023/03/the-art-of-engineering-management-striking-the-right-balance/the-art-of-engineering-management-striking-the-right-balance"
+slug: "2023/03/the-art-of-engineering-management-striking-the-right-balance"
 tags:
   - "engineering leadership"
 ---
