@@ -1,0 +1,27 @@
+---
+export const prerender = false;
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const randomRes = await fetch("https://c.xkcd.com/random/comic/", { redirect: "manual" });
+const location = randomRes.headers.get("location")!;
+const comicNum = location.match(/\/(\d+)\//)![1];
+const res = await fetch(`https://xkcd.com/${comicNum}/info.0.json`);
+const comic = await res.json();
+---
+
+<BaseLayout title="Page Not Found" noindex>
+  <article class="prose dark:prose-invert max-w-none">
+    <h1>404</h1>
+    <p>This page doesn't exist. Maybe it did once, or maybe you just mistyped something.</p>
+    <p><a href="/">Head back home</a></p>
+    <figure>
+      <a href={`https://xkcd.com/${comic.num}/`}>
+        <img src={comic.img} alt={comic.alt} title={comic.alt} />
+      </a>
+      <figcaption>
+        <a href={`https://xkcd.com/${comic.num}/`}>xkcd #{comic.num}: {comic.title}</a>
+      </figcaption>
+    </figure>
+  </article>
+</BaseLayout>
