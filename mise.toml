@@ -1,2 +1,4 @@
 [tools]
 bun = "1"
+lefthook = "2"
+"npm:@commitlint/cli" = "latest"
